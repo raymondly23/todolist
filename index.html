@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+<h1>Todo List</h1>
+<input type='date' id='date'></input>
+<input type='text' id='desc'placeholder="What to do..."></input>
+<button class='btn' id='addTodo'>ADD!</button>
+<br>
+<table class="table">
+	<thead>
+		<tr>
+			<th>Things to do</th>
+			<th>Deadline</th>
+			<th>Completed?</th>
+			<th>Delete?</th>
+		</tr>
+	</thead>
+	<tbody id='todoTable'>
+		<tr id ='template'>
+			<td class='desc'>Clean the car</td>
+			<td class='dueDate'>3/22/16</td>
+			<td><input id='checkbox' type="checkbox" value="false"></td>
+			<td><button class='btn btn-danger'id='delete'>Delete!</button></td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
